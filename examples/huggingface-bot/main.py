@@ -17,7 +17,7 @@ def on_message(message_history: List[Message], state: dict = None):
     # Generate HuggingFace response. Uses the DialoGPT-large model from Microsoft by default.
     bot_response = HuggingFace.generate(
         system_prompt=SYSTEM_PROMPT,
-        message_history=message_history, # Assuming history is the list of user messages
+        message_history=message_history, # Assuming history is the list of user 
     )
 
     response = {
